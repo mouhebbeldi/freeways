@@ -1,0 +1,461 @@
+:root {
+--my-cool-background: #323;
+--my-header-background: rgba(33,22,33,.7);
+--my-footer-background: rgba(11,22,11,.9);
+}
+/* The rest of the CSS file */
+
+html{
+scroll-behavior: smooth;
+/*    transition: 2s;*/
+}
+
+a,video{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+*{
+padding: 0;
+margin: 0;
+width: 100%;
+font-family: monospace,"helvetica";
+  
+}
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+video{
+position: relative;
+height: auto;
+width:calc(90%);
+left: 5%;
+}
+
+/*********************************************************/
+/*********************SLIDE UP BTN************************************/
+/**********************SLIDE UP BTN***********************************/
+
+.scrolUpBtn{
+position: fixed;
+width: 60px;
+height: 60px;
+
+bottom: 40px;
+right: 1%;
+text-decoration: none;
+text-align: center;
+line-height: 60px;
+font-size: 40px;
+z-index:3;
+}
+.scrolUpBtn a{
+text-decoration: none;
+color: #fff;
+}
+/**********************SLIDE UP BTN***********************************/
+/*********************************************************/
+/*********************************************************/
+body{
+box-sizing: border-box;
+background:var(--my-cool-background) no-repeat;
+height: auto;
+color:#666;
+font-family:Arial, Helvetica, sans-serif;
+/*background-image:-moz-radial-gradient(center 100px 155deg, circle farthest-corner, #444 150px, #111 300px);*/
+/*background-image:-webkit-gradient(radial, 120% 0, 150, 10% 0, 300, from(#444), to(#111));*/
+}
+/*welcomming*/
+.welcomming{
+
+position: relative;
+height: auto;
+width: 90%;
+left: 5%;
+text-align: center;
+margin-top: 2px;
+margin-bottom: 0px;
+transition: 2s;
+cursor:pointer;
+border-radius:15px;
+font-family:'Myriad Pro', Helvetica, sans-serif;
+font-size:20px;
+font-weight:bold;
+letter-spacing:0.2px;
+line-height:25px;
+}
+.welcomming:hover {
+color: #fff;
+background-color: var(--my-header-background);
+
+
+/*     animation: wobble 22s infinite ;*/
+
+}
+
+
+
+/* welcomming ends here */
+
+
+
+/*header*/
+
+
+header   {
+    background: var(--my-header-background);
+/*background-image:-moz-radial-gradient(center 100px 95deg, circle farthest-corner, #444 150px, #111 300px);*/
+/*background-image:-webkit-gradient(radial, 80% 0, 150, 50% 0, 300, from(#444), to(#111));*/
+color: #FFF;
+padding: 10px 10px;
+}
+/*****************************************/
+/*****************************************/
+/*****************************************/
+/*****************************************/
+/* logo */
+#logo         {
+display:inline-block;
+color: #FFF;
+text-decoration: none;
+width: 49.5%;
+     position: relative;
+left: 0;
+}
+#logo img    {
+width: 55px;
+height:60px;
+border-radius: 50%;
+
+
+}
+
+#logo2{
+
+display:inline-block;
+color: #FFF;
+    position: relative;
+text-decoration: none;
+width: 49.5%;
+    right: 0;
+text-align: right;
+
+}
+#logo2 img    {
+width: 60px;
+
+height:60px;
+
+}
+#logo2:hover span   {
+color:darkgreen;
+
+}#logo:hover span   {
+color:darkgreen;
+
+}
+
+/*****************logo ends here*******/
+/**************************************/
+/**************************************/
+/**************************************/
+
+
+
+
+/* main navigation */
+
+
+
+
+nav     {
+width: 19%;
+display: inline;
+text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul   {
+list-style: none;
+margin: 0;
+    padding: 0;
+display: inline-block;
+position: relative;
+left:0;
+
+}
+
+
+
+nav ul li a    {
+color: #FFF;
+text-decoration: none;
+display:inline-block;
+border-radius: 3px;
+transition: 0.3s ease-in all;
+padding-top:5px; 
+}
+nav ul li a:hover   {
+background: #444;
+color: #119900;
+filter: blur(.5px);
+}
+/**************main navigation end here*****/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+
+
+
+
+
+
+/*the awesome navBarrrrr     */
+#navigationMenu{
+position: fixed;
+left:0%;
+z-index: 6;
+width: 38px;
+top:88px;
+}
+
+
+
+
+
+
+
+
+#navigationMenu li{
+list-style:none;
+height:50px;
+padding:0px;
+width:40px;
+}
+.freewaysImages{
+position: inherit;
+width: 90%;
+left: 5%;
+}
+#navigationMenu span{
+
+width:0;
+left:38px;
+padding:0;
+position:absolute;
+overflow:hidden;
+
+
+font-family:'Myriad Pro', Helvetica, sans-serif;
+font-size:20px;
+font-weight:bold;
+letter-spacing:0.3px;
+white-space:nowrap;
+line-height:39px;
+
+
+transition: 0.5s;
+
+
+}
+
+#navigationMenu a{
+background:url('../IMAGES/randomImages/navigation.jpg') no-repeat;
+
+height:39px;
+width:38px;
+display:flex;
+position:relative;
+
+}
+
+/* General hover styles */
+
+#navigationMenu a:hover span{
+width:auto; 
+padding:0 20px;
+overflow:visible; 
+}
+#navigationMenu a:hover{
+text-decoration:none;
+
+
+box-shadow:0 0 5px #9ddff5;
+}
+/* Green Button */
+
+#navigationMenu .home {	
+background-position:0 0;
+}
+#navigationMenu .home:hover {	
+background-position:0 0px;
+}
+#navigationMenu .home span{
+background-color:#7da315;
+color:#3d4f0c;
+text-shadow:1px 1px 0 #99bf31;
+}
+
+/* Blue Button */
+
+#navigationMenu .about { 
+background-position:-38px 0;
+}
+#navigationMenu .about:hover { 
+background-position:-38px -39px;
+}
+#navigationMenu .about span{
+background-color:#1e8bb4;
+color:#223a44;
+text-shadow:1px 1px 0 #44a8d0;
+}
+
+/* Orange Button */
+
+#navigationMenu .services { 
+background-position:-76px 0;
+}
+#navigationMenu .services:hover { 
+background-position:-76px -39px;
+}
+#navigationMenu .services span{
+background-color:#c86c1f;
+color:#5a3517;
+text-shadow:1px 1px 0 #d28344;
+}
+
+/* Yellow Button */
+
+#navigationMenu .portfolio { 
+background-position:-114px 0;
+}
+#navigationMenu .portfolio:hover{
+background-position:-114px -39px;
+}
+#navigationMenu .portfolio span{
+background-color:#d0a525;
+color:#604e18;
+text-shadow:1px 1px 0 #d8b54b;
+}
+
+/* Purple Button */
+
+#navigationMenu .contact { background-position:-152px 0;}
+#navigationMenu .contact:hover { background-position:-152px -39px;}
+#navigationMenu .contact span{
+background-color:#af1e83;
+color:#460f35;
+text-shadow:1px 1px 0 #d244a6;
+}
+
+
+
+#main{
+margin:40px auto;
+position:relative;
+width:40px;
+
+}
+
+
+h1{
+color: darkgreen ;
+font-size:30px;
+font-weight:800;
+padding:10px 0 10px;
+text-align:center;
+font-family:"Myriad Pro";
+border-bottom: 3px solid darkgreen ;
+animation: changeColor 3s infinite ;
+cursor: pointer;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes changeColor {
+0% {color: darkgreen;}
+50% {color: lightgreen;}
+100% {color: darkgreen;}
+}
+
+
+
+/*header ends here*/
+
+/*presentation*/
+.presentationSpace{
+position: relative;
+height:auto;
+width: 90%;
+
+left: 5%;
+text-align: center;
+margin-top: 0px;
+}
+
+
+.article{
+color: #bbb;
+cursor: pointer;
+transition: 1s;
+height: auto;
+}
+.article:hover{
+color: #ffffff;
+
+}
+
+/*presentation ends here*/
+
+
+/*dashboard*/
+.dashboard{
+height:100%;
+margin-top: 5px;
+align-items: center;
+width:90%;
+text-align: center;
+left: 5%;
+position: relative;
+
+
+}
+
+.dashborad .row{
+width:90%;
+text-align: center;
+left:5%;
+}
+
+.freewaysAch:hover{
+
+background-color: var(--my-header-background);
+cursor: pointer;
+color: #fff;
+transition: .5s;
+}
+
+
+
+/*dashboard ends here*/
+@media screen and (max-width:920px) {
+
+
+    p{
+        font-size: 30px;
+    }
+    
+    nav{
+        display:  none;
+    }
+    
+   
+}@media screen and (max-width:660px) {
+
+#navigationMenu{
+display: none;
+}
+    
+ 
+   
+}

@@ -1,0 +1,39 @@
+:root {
+--my-cool-background: #323;
+--my-header-background: rgba(33,22,33,.7);
+--my-footer-background: rgba(11,22,11,.9);
+}
+.departements   {
+  padding-bottom: 10px;
+  margin-top: 100px;
+    text-align: center;
+    height: auto;
+}
+
+.departements-inside   {
+  width: 90%;
+/*  max-width: 1200px;*/
+  margin: 0 auto;
+}
+.departements-header {
+  text-align: center;
+  margin-bottom:10px;
+}
+
+
+/* feature boxes */
+.feature-box2   {
+  display: inline-block;
+  width: 90%;
+  padding: 0px 0px;
+    align-items: center;
+}
+
+.feature-box2 h4   {
+  font-size: 28px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
+}

@@ -1,0 +1,119 @@
+/*footer */
+:root {
+--my-cool-background: #323;
+--my-header-background: rgba(33,22,33,.7);
+--my-footer-background: rgba(11,22,11,.7);
+}
+.footerTop{
+height: 40vh;
+width:100% ;
+position: inherit;
+
+text-align: center;
+margin-top: 20px;
+bottom: 0%;
+}
+footer{
+
+background: var(--my-footer-background);
+border-top: 10px solid var(--my-footer-background);
+text-align: center;
+
+}
+footer img{
+height: 55px;
+width:55px ;
+border-radius: 50%;
+}
+footer span{
+color: navajowhite;
+cursor: pointer;
+}footer span:hover{
+color: #fff;
+}
+
+footer .footerAwesome {
+
+}
+
+.btns{
+
+display:inline-block;
+width: 70px;
+height: 70px;
+background: #f1f1f1;
+margin:0px 5%;
+border-radius: 30%;
+box-shadow: 0 5px 15px -5px #00000070;
+overflow: hidden;
+border: none;
+position: relative;
+}.btns i{
+line-height: 70px;
+font-size: 26px;
+transition: .2s linear;
+
+
+}.btns:hover i{
+transform: scale(1.2);
+color:antiquewhite;
+
+}
+.btns::before{
+
+content: "";
+position: absolute;
+width: 120%;
+height: 120%;
+background: darkgreen;
+transform: rotate(45deg);
+left:-110%;
+top:90%;
+}
+.btns:hover::before{
+
+animation: animate 1s 1;
+top: -10%;
+left: -10%;
+
+}
+
+
+@keyframes animate {
+0%{
+top: -110%;
+left:90%;
+
+}  
+50%{
+top: 10%;
+left: -30%;
+
+} 
+100%{
+top: -10%;
+left: -10%;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer ends here */

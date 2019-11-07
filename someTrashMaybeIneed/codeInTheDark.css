@@ -1,0 +1,370 @@
+html{
+    scroll-behavior: smooth;
+}
+:root {
+--my-cool-background: #323;
+--my-header-background: rgba(33,22,33,.7);
+}
+*{
+padding: 0;
+margin: 0;
+    width: 100%;
+
+}
+a{
+    cursor: pointer;
+}
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+  video{
+              width: 100% !important;
+              height: 100vh !important;
+              position: relative;
+              top: 0%;
+              left: 0%;
+              z-index: -1 !important;
+              box-shadow: 12px 12px -5px #222;
+          }
+
+/*********************************************************/
+/*********************SLIDE UP BTN************************************/
+/**********************SLIDE UP BTN***********************************/
+
+.scrolUpBtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+   
+    bottom: 40px;
+    right: 1%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+.scrolUpBtn a{
+    text-decoration: none;
+    color: #fff;
+}
+/**********************SLIDE UP BTN***********************************/
+/*********************************************************/
+/*********************************************************/
+body{
+box-sizing: border-box;
+    background:#111 no-repeat;
+    height: auto;
+    color:#666;
+    font-family:Arial, Helvetica, sans-serif;
+    background: var(--my-header-background);
+/*
+    background-image:-moz-radial-gradient(center 100px 155deg, circle farthest-corner, #444 150px, #111 300px);
+	background-image:-webkit-gradient(radial, 120% 0, 150, 10% 0, 300, from(#444), to(#111));
+*/
+}
+
+
+
+/*header*/
+
+
+header   {
+    background: var(--my-header-background);
+/*
+  background-image:-moz-radial-gradient(center 100px 95deg, circle farthest-corner, #444 150px, #111 300px);
+	background-image:-webkit-gradient(radial, 80% 0, 150, 50% 0, 300, from(#444), to(#111));
+*/
+  color: #FFF;
+  padding: 20px 10px;
+}
+/******************header***********************/
+/*****************************************/
+/*****************************************/
+/*****************************************/
+/* logo */
+#logo         {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  width: 49%;
+    left: 2%;
+}
+#logo img    {
+  width: 55px;
+  height:60px;
+  border-radius: 50%;
+  
+    
+}
+
+#logo2{
+   
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  width: 50%;
+    text-align: right;
+    
+}
+#logo2 img    {
+  width: 60px;
+  
+   height:60px;
+    
+}
+#logo2:hover span   {
+  color:darkgreen;
+    
+}#logo:hover span   {
+  color:darkgreen;
+    
+}
+/*****************logo ends here*******/
+/**************************************/
+/**************************************/
+/**************************************/
+
+
+
+
+/* main navigation */
+
+
+
+
+nav     {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+nav ul   {
+  list-style: none;
+  margin: 0;
+      display: inline-block;
+    position: relative;
+    left:50%;
+
+}
+
+nav ul li a    {
+  color: #FFF;
+  text-decoration: none;
+  display:inline-block;
+  border-radius: 3px;
+  transition: 0.3s ease-in all;
+    padding-top:5px; 
+}
+nav ul li a:hover   {
+  background: #444;
+    color: #119900;
+    filter: blur(.5px);
+}
+/**************main navigation end here*****/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+
+
+
+
+
+
+/*the awesome navBarrrrr     */
+#navigationMenu{
+    position: fixed;
+    left:0%;
+    z-index: 3;
+    width: 38px;
+    top:275px;
+}
+
+#navigationMenu li{
+	list-style:none;
+	height:50px;
+	padding:0px;
+	width:40px;
+}
+.freewaysImages{
+    position: inherit;
+    width: 80%;
+    left: 10%;
+}
+#navigationMenu span{
+	
+	width:0;
+	left:38px;
+	padding:0;
+	position:absolute;
+	overflow:hidden;
+
+
+	font-family:'Myriad Pro', Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	letter-spacing:0.3px;
+	white-space:nowrap;
+	line-height:39px;
+	
+	
+	transition: 0.5s;
+	
+	
+}
+
+#navigationMenu a{
+	background:url('navigation.jpg') no-repeat;
+
+	height:39px;
+	width:38px;
+	display:flex;
+	position:relative;
+    
+}
+
+/* General hover styles */
+
+#navigationMenu a:hover span{
+    width:auto; 
+    padding:0 20px;
+    overflow:visible; 
+}
+#navigationMenu a:hover{
+	text-decoration:none;
+	
+	
+	box-shadow:0 0 5px #9ddff5;
+}
+/* Green Button */
+
+#navigationMenu .home {	
+    background-position:0 0;
+}
+#navigationMenu .home:hover {	
+    background-position:0 0px;
+}
+#navigationMenu .home span{
+	background-color:#7da315;
+	color:#3d4f0c;
+	text-shadow:1px 1px 0 #99bf31;
+}
+
+/* Blue Button */
+
+#navigationMenu .about { 
+    background-position:-38px 0;
+}
+#navigationMenu .about:hover { 
+    background-position:-38px -39px;
+}
+#navigationMenu .about span{
+	background-color:#1e8bb4;
+	color:#223a44;
+	text-shadow:1px 1px 0 #44a8d0;
+}
+
+/* Orange Button */
+
+#navigationMenu .services { 
+    background-position:-76px 0;
+}
+#navigationMenu .services:hover { 
+    background-position:-76px -39px;
+}
+#navigationMenu .services span{
+	background-color:#c86c1f;
+	color:#5a3517;
+	text-shadow:1px 1px 0 #d28344;
+}
+
+/* Yellow Button */
+
+#navigationMenu .portfolio { 
+    background-position:-114px 0;
+}
+#navigationMenu .portfolio:hover{
+    background-position:-114px -39px;
+}
+#navigationMenu .portfolio span{
+	background-color:#d0a525;
+	color:#604e18;
+	text-shadow:1px 1px 0 #d8b54b;
+}
+
+/* Purple Button */
+
+#navigationMenu .contact { background-position:-152px 0;}
+#navigationMenu .contact:hover { background-position:-152px -39px;}
+#navigationMenu .contact span{
+	background-color:#af1e83;
+	color:#460f35;
+	text-shadow:1px 1px 0 #d244a6;
+}
+
+
+
+#main{
+	margin:80px auto;
+	position:relative;
+	width:40px;
+    
+}
+
+
+h1{
+	color: darkorange ;
+	font-size:30px;
+	font-weight:800;
+	padding:60px 0 20px;
+	text-align:center;
+    font-family:"Myriad Pro";
+    border-bottom: 3px solid darkorange ;
+    animation: pulse 1s infinite;
+    cursor: pointer;
+    
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.01);}
+  100% {transform: scale(1);}
+}
+
+
+
+/*header ends here*/
+/******container*************/
+.container{
+    position: relative;
+    width: 80%;
+  
+    left: 10%;
+}
+.CITDIMAGES img:hover{
+    border: 1px solid darkgreen;  
+      border-radius: 12px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+/******container end here************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,8 +1,9 @@
 /********************************************************************************************************/
 var elmnt1 = document.querySelector(".scrollPresentaion");
+var elmnt11 = document.querySelector(".nav-item");
 var elmnt2 = document.querySelector(".presentationSpace.row");
 
-elmnt1.addEventListener("click",() => {
+elmnt1.addEventListener('click',() => {
     
    elmnt2.scrollIntoView();
 });
@@ -12,7 +13,10 @@ const presentationAwesomeNavBar=document.querySelector('.PRESENTATION');
 
 
 presentationAwesomeNavBar.addEventListener('click',()=>{
-    elmnt2.scrollIntoView(); });
+    
+    elmnt2.scrollIntoView(); 
+    
+});
 
 /********************************************************************************************************/
 var elmnt3 = document.querySelector(".scrollActivity");
@@ -83,7 +87,7 @@ document.addEventListener("scroll",()=>{
 
 
 
-console.log(window.pageYOffset);
+//console.log(window.pageYOffset);
 
 
 
@@ -110,7 +114,7 @@ var i=0;
 var images=['IMAGES\\img1.jpg','IMAGES\\img2.jpg','IMAGES\\img3.jpg','IMAGES\\img4.jpg'];
 
 
-
+ 
 var changeImages = () => {
       
         document.slide.src=images[i];
@@ -138,50 +142,50 @@ window.onload=changeImages();
 /*******************************************************************************************************/
 
 
-
-document.querySelector(".scrollContactUs").addEventListener("click",()=>{
-//   console.log(document.querySelector(".contactUS"));
-            document.querySelector(".contactUS").style.display="block";
-            
-   
-});
-
-document.querySelector(".CONTACTUS").addEventListener("click",()=>{
-//   console.log(document.querySelector(".contactUS"));
-    
-            document.querySelector(".contactUS").style.display="block";
-           
-    
-});
-
-
-document.querySelector(".outContactUs").addEventListener("click",()=>{
-    
-    document.querySelector(".contactUS").style.display="none";
-    
-    
-});
-
-
-console.log(window.innerWidth);
-
-if(window.innerWidth <= 900){
-    document.querySelector(".contactUS").style.display="block";
-    document.querySelector(".contactUS").style.top="200px";
-    document.querySelector(".contactUS").style.position="relative";
-    document.querySelector(".contactUS").style.left="50%";
-    document.querySelector("div .outContactUs").style.display="none";
-    
-    document.querySelector("div .outContactUs").style.zIndex="0";
-}
-
-
-
-if(window.innerWidth <= 767){
-    document.querySelector(".contactUS").style.top="500px";
-    
-}
-
+//
+//document.querySelector(".scrollContactUs").addEventListener("click",()=>{
+////   console.log(document.querySelector(".contactUS"));
+//            document.querySelector(".contactUS").style.display="block";
+//            
+//   
+//});
+//
+//document.querySelector(".CONTACTUS").addEventListener("click",()=>{
+////   console.log(document.querySelector(".contactUS"));
+//    
+//            document.querySelector(".contactUS").style.display="block";
+//           
+//    
+//});
+//
+//
+//document.querySelector(".outContactUs").addEventListener("click",()=>{
+//    
+//    document.querySelector(".contactUS").style.display="none";
+//    
+//    
+//});
+//
+//
+//console.log(window.innerWidth);
+//
+//if(window.innerWidth <= 900){
+//    document.querySelector(".contactUS").style.display="block";
+//    document.querySelector(".contactUS").style.top="200px";
+//    document.querySelector(".contactUS").style.position="relative";
+//    document.querySelector(".contactUS").style.left="50%";
+//    document.querySelector("div .outContactUs").style.display="none";
+//    
+//    document.querySelector("div .outContactUs").style.zIndex="0";
+//}
+//
+//
+//
+//if(window.innerWidth <= 767){
+//    document.querySelector(".contactUS").style.top="500px";
+//    
+//}
+//
 
 
 

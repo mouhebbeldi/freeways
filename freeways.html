@@ -16,13 +16,12 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/animate.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
   </head>
   <body>
-      
-      
       
       
 <!--  *********SLIDE UP BTN***********/-->
@@ -61,17 +60,41 @@
     <img src="http://www.isi.rnu.tn/Fr/static/fr/image/gif/logo.gif" >
 
 </a></div>
-<!-- main navigation links -->
-<nav>
+<!--
+ main navigation links 
+<nav class= "navbar navbar-expand-sm ">
     <ul class="scrollAnimation">
-        <li><a  class="scrollPresentaion">PRESENTATION</a></li>
-        <li><a class="scrollActivity">ACTIVITY</a></li>
-        <li><a class="scrollDepartement">DEPARTEMENT</a></li>
-        <li><a class="scrollEventsHistory">EVENTS HISTORY</a></li>
-        <li><a class="scrollContactUs">CONTACTUS</a></li>
+        <li><a  class="scrollPresentaion navbar-nav">PRESENTATION</a></li>
+        <li><a class="scrollActivity navbar-nav">scrollActivity</a></li>
+        <li><a class="scrollDepartement navbar-nav">DEPARTEMENT</a></li>
+        <li><a class="scrollEventsHistory navbar-nav">EVENTS HISTORY</a></li>
+        <li><a  href="contact.html" class="scrollContactUs navbar-nav">CONTACTUS</a></li>
     </ul>
 </nav>
-
+--><nav class="navbar  navbar-expand-md " >
+<!--  <a class="navbar-brand scrollPresentaion" >PRESENTATION</a>-->
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        
+      <li class="nav-item ">
+        <a class="nav-link scrollPresentaion" >Presentation </a>
+      </li>
+        <li class="nav-item ">
+        <a class="nav-link scrollActivity" >Activity </a>
+      </li>
+      <li class="nav-item scrollDepartement">
+        <a class="nav-link" >Departements</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link scrollEventsHistory" >History</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scrollContactUs" href="contact.html">ContactUs</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 </header>
       
       
@@ -81,30 +104,30 @@
 <div id="main">
 <ul id="navigationMenu">
 <li>
-<a class="home PRESENTATION" >
-    <span>PRESENTATION</span>
+<a class="home PRESENTATION" data-toggle="tooltip" title="presentation" >
+    <span>Presentation</span>
 </a>
 </li>
 <li> 
-<a class="about ACTIVITY" >
-    <span>ACTIVITY</span>
+<a class="about ACTIVITY" data-toggle="tooltip" title="activity" >
+    <span>Activity</span>
 </a>
 </li>
 <li>
- <a class="services DEPARTEMENTS" >
-    <span>DEPARTEMENTS</span>
+ <a  class="services DEPARTEMENTS"data-toggle="tooltip" title="departement" >
+    <span>Departements </span>
  </a>
 </li>
 
 <li>
-<a class="portfolio EVENT-HISTORY" >
-    <span>EVENT HISTORY</span>
+<a class="portfolio EVENT-HISTORY" data-toggle="tooltip" title="eventsHistory">
+    <span>Event History</span>
 </a>
 </li>
 
 <li>
-<a class="contact CONTACTUS">
-    <span>CONTACTUS</span>
+<a class="contact CONTACTUS" href="contact.html" data-toggle="tooltip" title="contact">
+    <span>ContactUs</span>
 </a>
 </li>
 </ul>
@@ -113,57 +136,7 @@
       
       
 <!-- ********* logos **************    -->
-<!--**************************************************************************-->
-<!--**************************************************************************-->
-<!--contactUS************************************************      -->
-<!--contactUS************************************************      -->
-      
-<div class="contactUS">
-    <div class="contactUS-inside ">
-        
-        <div class="row">
-            <div class="col-md-6 signUp">
-                <h2>SIGN UP</h2>
-                 
 
-                <form>
-                    <label>EMAIL<input type="email" name="email" required ></label>
-                    <label>FIRST-NAME<input type="text" name="text" required></label>
-                    <label>LAST-NAME<input type="text" name="text" required></label>
-                    <h6>WHAT IS YOUR FAVOURITE LANGUAGE</h6>
-                   
-                    <div class="row">    
-                    <label  class="col-md-6"> FRENCH  <input type="radio" name="r1" value="fr"></label>
-                       <label class="col-md-6">   ENGLISH    <input type="radio" name="r1" value="eng"></label>
-                    </div>
-                    <h6>DEPARTEMENTS</h6>
-                    <div  class="row">
-                        
-                        <label class="col-sm-3">HLP<input type="checkbox" name="hlp"></label>
-                        <label class="col-sm-3">PS<input type="checkbox" name="ps"></label>
-                        <label class="col-sm-3">ROBOTICS<input type="checkbox" name="robotics"></label>
-                    </div>
-                    <button>SUBMIT</button>
-                </form>
-            </div> 
-            <div class="col-md-6 more">
-                 <div class="outContactUs"><i class="fas fa-times"></i></div>
-                <h2>FREEWAYS</h2>
-                <p ><i class="fad fa-check"></i> BE SMART,BE ONE OF US</p>
-                <img src="IMAGES/hlp/session1/img2.jpg">
-            </div>
-        </div>
-    </div>
-</div>
-      
-      
-
-
-<!--contactUS************************************************      -->
-<!--contactUS************************************************      -->
-      
-      
-      
       
       
       
@@ -174,7 +147,7 @@
       
 
 <div class="welcomming row">
-<h1 class="animationWelcomming  slideInUp delay-1s  ">HI,WELCOME FREEWAYERS</h1>
+<h1 class="animationWelcomming  slideInUp delay-1s  ">Hi,Welcome Freeways</h1>
   <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -193,10 +166,8 @@
 <div>
 
  
-<video  muted  controls>
-<source src="video/whatIsFreeways.mp4" type="video/mp4">
-<!--      JUST EXAMPLE FROM FREEWAYS ISI YTB CHANNEL -->
-</video>
+
+    
 <video  muted  controls>
 <source src="video/FreewaysPRIZES.mp4" type="video/mp4">
 <!--      JUST EXAMPLE FROM FREEWAYS ISI YTB CHANNEL -->
@@ -264,15 +235,15 @@
 <div class="dashboard" >
 
 <div class="row ">
-     <div class="col-sm-4 freewaysAch">
+    <div class="col-sm-4 freewaysAch">
 
-         <h2>+25PROJECT</h2>
+         <h2>+<div class="numUp" data-count="25">25</div>PROJECTS</h2>
     </div> 
     <div class="col-sm-4 freewaysAch">
-       <h2>+250 MEMBERS</h2>
+       <h2>+<div class="numUp" data-count="250">230</div> MEMBERS</h2>
     </div>
     <div class="col-sm-4 freewaysAch">
-         <h2>++</h2>
+         <h2>+<div class="numUp" data-count="30">33</div>OF SPONSORS</h2>
     </div>
   </div>
 
@@ -345,40 +316,40 @@
 <!--      departement-->
 
 <div class="departements">
-<div class="departements-inside">
+<div class="departements-inside row">
 
-<div class="departements-header">
+<div class="departements-header ">
     <h1>DEPARTEMENTS</h1>
 </div>
 
-<div class="feature-box2">
+<div class="feature-box2 col-md-6">
    
     <h4>METALICA</h4>
     <p>Reference site about Lorem Ipsum, giving information on its origins.
     Reference site about Lorem Ipsum, giving information on its origins.</p>
 </div>
 
-<div class="feature-box2">
+<div class="feature-box2 col-md-6">
    
     <h4>AVENGED SEVEN FOLD</h4>
     <p>Reference site about Lorem Ipsum, giving information on its origins.
     Reference site about Lorem Ipsum, giving information on its origins.</p>
 </div>
 
-<div class="feature-box2">
+<div class="feature-box2 col-md-6">
     
     <h4>SLIPKNOT</h4>
     <p>Reference site about Lorem Ipsum, giving information on its origins.
     Reference site about Lorem Ipsum, giving information on its origins.</p>
 </div> 
-<div class="feature-box2">
+<div class="feature-box2 col-md-6">
    
     <h4>DISTURBED</h4>
     <p>Reference site about Lorem Ipsum, giving information on its origins.
     Reference site about Lorem Ipsum, giving information on its origins.
     Reference site about Lorem Ipsum, giving information on its origins.</p>
 </div>
-<div class="feature-box2">
+<div class="feature-box2 col-md-6">
   
     <h4>SOAD</h4>
     <p>Reference site about Lorem Ipsum, giving information on its origins.
@@ -468,6 +439,8 @@
 
     <a href="https://www.facebook.com/FreewaysISIClub/?ref=br_rs" class="btns">
         <i class="fab fa-google"></i>
+    </a> <a href="#" class="btns">
+        <i class="fab fa-linkedin-in"></i>
     </a>
 
 </div>
@@ -476,12 +449,22 @@
       
       
 <!--      footer ends here-->
-      <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+//          console.log("why");
+////  $('[data-toggle="tooltip"]').tooltip();   
+          $(".numUp").counterUp({
+              delay:10,
+              time:1000
+          
+          });   
+          
+});
+
+      </script>
 <script src="js/freeways.js"></script>
-    
+
+
 </body>
 </html>
 

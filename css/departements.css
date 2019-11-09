@@ -11,7 +11,7 @@
 }
 
 .departements-inside   {
-  width: 90%;
+  width: 80%;
 /*  max-width: 1200px;*/
   margin: 0 auto;
 }
@@ -24,8 +24,9 @@
 /* feature boxes */
 .feature-box2   {
   display: inline-block;
-  width: 90%;
+  
   padding: 0px 0px;
+    
     align-items: center;
 }
 
@@ -36,4 +37,9 @@
   font-weight: 400;
   letter-spacing: 2px;
   margin: 0;
+}
+@media screen and (max-width:660px) {
+    .feature-box2{left: 10%;width: 100%;align-items: left ;}
+ 
+   
 }
